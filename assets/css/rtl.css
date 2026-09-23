@@ -1,0 +1,77 @@
+/* ==========================================================================
+   ATELIER FORMA · rtl.css
+   Applied when <html dir="rtl">. The template is written with logical CSS
+   properties (inset-inline, margin-inline, etc.), so most layout mirrors on its
+   own. This file covers what logical properties cannot: transforms, arrows,
+   clip-paths, gradients, floats, fonts and letter-spacing.
+   Toggle from the header (translate icon) or set dir="rtl" on <html>.
+   The JavaScript also swaps Bootstrap to bootstrap.rtl.min.css automatically.
+   ========================================================================== */
+[dir="rtl"] {
+  --dir: -1;
+  --origin: 100% 50%;
+}
+[dir="rtl"] body {
+  font-family: "Noto Sans Arabic", "Noto Sans Hebrew", "Manrope", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  text-align: start;
+}
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] .lead-serif,
+[dir="rtl"] .stat__num, [dir="rtl"] .quote-card p, [dir="rtl"] .band__quote p, [dir="rtl"] .statement__text {
+  font-family: "Noto Sans Arabic", "Noto Sans Hebrew", "Cormorant Garamond", "Times New Roman", serif;
+  letter-spacing: 0;
+}
+/* Letter-spacing breaks joined (cursive) scripts: neutralise it in RTL */
+[dir="rtl"] *, [dir="rtl"] *::before, [dir="rtl"] *::after { letter-spacing: 0 !important; }
+[dir="rtl"] em, [dir="rtl"] .signature, [dir="rtl"] .pull p { font-style: normal; }
+
+/* Directional icons */
+[dir="rtl"] .bi-arrow-right, [dir="rtl"] .bi-arrow-left, [dir="rtl"] .bi-arrow-up-right,
+[dir="rtl"] .bi-chevron-right, [dir="rtl"] .bi-chevron-left { transform: scaleX(-1); }
+[dir="rtl"] .svc-row:hover .svc-row__go { transform: rotate(-45deg); }
+[dir="rtl"] .svc-row__go .bi-arrow-up-right { transform: scaleX(-1); }
+
+/* Brand + header */
+[dir="rtl"] .brand { transform-origin: right center; }
+[dir="rtl"] .nav-link::after, [dir="rtl"] .link-arrow::after { transform-origin: 100% 50%; }
+[dir="rtl"] .dropdown-menu { text-align: start; }
+[dir="rtl"] .mobile-sub { padding-inline-start: 1rem; }
+
+/* Hero */
+[dir="rtl"] .parallax-band__veil--left { background: linear-gradient(270deg, rgba(12, 11, 10, .82), rgba(12, 11, 10, .12) 75%); }
+[dir="rtl"] .notfound .parallax-band__veil { background: linear-gradient(270deg, rgba(12, 11, 10, .85), rgba(12, 11, 10, .55)); }
+[dir="rtl"] .hero__vertical { right: auto; left: 1.6rem; }
+[dir="rtl"] .founder__vertical { right: auto; left: -2.4rem; }
+[dir="rtl"] .hx__l { transform: translate3d(calc(var(--p) * 9vw), 0, 0); }
+[dir="rtl"] .hx__r { transform: translate3d(calc(var(--p) * -9vw), 0, 0); }
+
+/* Reveal masks */
+[dir="rtl"] .js .reveal-media[data-reveal="wipe-x"] > .px, [dir="rtl"] .js .reveal-media[data-reveal="wipe-x"] > img { clip-path: inset(0 0 0 100%); }
+[dir="rtl"] .js .reveal-media[data-reveal="wipe-x"].is-inview > .px, [dir="rtl"] .js .reveal-media[data-reveal="wipe-x"].is-inview > img { clip-path: inset(0 0 0 0); }
+[dir="rtl"] .tl__line, [dir="rtl"] .process__line { transform-origin: 50% 0; }
+[dir="rtl"] .process__line { transform-origin: 100% 50%; }
+
+/* Typography details */
+[dir="rtl"] .dropcap::first-letter { float: right; margin: .3rem 0 0 .9rem; }
+
+/* Components that use physical positions */
+[dir="rtl"] .field select { background-position: left 1rem center; }
+[dir="rtl"] .j-search input { padding-inline: 2.8rem 1rem; }
+[dir="rtl"] .accordion-button::after { margin-inline-start: auto; margin-inline-end: 0; }
+[dir="rtl"] .crumbs li + li::before { content: "\\"; }
+[dir="rtl"] .h-slider__track { direction: rtl; }
+[dir="rtl"] .newsletter__btn:hover { transform: translateX(-5px); }
+[dir="rtl"] .price__tag { inset-inline-end: 1.6rem; }
+[dir="rtl"] .compare__table th, [dir="rtl"] .compare__table td { text-align: right; }
+[dir="rtl"] .gantt__wk { text-align: start; }
+
+/* Before/after keeps a left-to-right comparison so the labels stay truthful */
+[dir="rtl"] .ba, [dir="rtl"] .ba__label { direction: ltr; }
+
+/* Article sidebar + portfolio metadata */
+[dir="rtl"] .sidebar, [dir="rtl"] .meta, [dir="rtl"] .meta-inline { text-align: start; }
+[dir="rtl"] .pop-list a { flex-direction: row; }
+[dir="rtl"] .lightbox__nav--prev .bi, [dir="rtl"] .lightbox__nav--next .bi { transform: scaleX(-1); }
+
+/* Numerals and Latin fragments (phone, email) keep left-to-right reading */
+[dir="rtl"] a[href^="tel:"], [dir="rtl"] a[href^="mailto:"], [dir="rtl"] input[type="email"], [dir="rtl"] input[type="tel"] { direction: ltr; unicode-bidi: plaintext; }
+[dir="rtl"] input[type="email"], [dir="rtl"] input[type="tel"] { text-align: right; }

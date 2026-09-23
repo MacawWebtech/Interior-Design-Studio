@@ -1,0 +1,114 @@
+/* ==========================================================================
+   ATELIER FORMA · dark-mode.css
+   Activated by <html data-theme="dark"> (also sets data-bs-theme for Bootstrap).
+   The theme is chosen from localStorage ("af-theme") or prefers-color-scheme.
+   Most components read the tokens below, so only exceptions are listed after.
+   ========================================================================== */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121110;
+  --bg-alt: #1a1815;
+  --surface: #1e1c19;
+  --text: #EDE7DB;
+  --muted: #ABA396;
+  --line: rgba(237, 231, 219, .17);
+  --line-strong: rgba(237, 231, 219, .42);
+  --stone: #6f695e;
+  --link: var(--accent);
+  --focus: var(--accent);
+  --danger: #EE8F76;
+}
+[data-theme="dark"] body { background: var(--bg); color: var(--text); }
+
+/* Header + navigation */
+[data-theme="dark"] .site-header.is-scrolled { box-shadow: 0 1px 0 var(--line), 0 14px 36px -18px rgba(0, 0, 0, .8); }
+[data-theme="dark"] .site-header.is-scrolled .brand__mark,
+[data-theme="dark"] .brand__mark--mobile { filter: brightness(0) invert(1); }
+[data-theme="dark"] .dropdown-menu { box-shadow: 0 24px 50px -20px rgba(0, 0, 0, .8); }
+[data-theme="dark"] .mobile-nav .btn-close { filter: invert(1); }
+[data-theme="dark"] .offcanvas-backdrop { --bs-backdrop-opacity: .7; }
+
+/* Buttons that sit on the page background switch to the brass accent */
+[data-theme="dark"] .btn-forma--solid { --bf-bg: var(--accent); --bf-fg: var(--ink); --bf-bd: var(--accent); --bf-hbg: #fff; --bf-hfg: var(--ink); }
+[data-theme="dark"] .btn-forma--outline { --bf-hbg: var(--text); --bf-hfg: var(--bg); }
+
+/* Imagery: gently tone photography down against dark surfaces */
+[data-theme="dark"] .frame img,
+[data-theme="dark"] .svc-card__media img,
+[data-theme="dark"] .gal__img img,
+[data-theme="dark"] .furn__img img,
+[data-theme="dark"] .member__img img { filter: brightness(.9) contrast(1.03); }
+[data-theme="dark"] .member__img img { filter: grayscale(1) brightness(.9) contrast(1.05); }
+[data-theme="dark"] .member:hover .member__img img { filter: brightness(.95); }
+[data-theme="dark"] .frame { background: #1a1815; }
+[data-theme="dark"] .intro__small { border-color: var(--bg-alt); }
+[data-theme="dark"] .rr__second { border-color: var(--bg-alt); }
+
+/* Cards, panels, overlays */
+[data-theme="dark"] .swatch,
+[data-theme="dark"] .quote-card,
+[data-theme="dark"] .svc-card,
+[data-theme="dark"] .price,
+[data-theme="dark"] .form-panel,
+[data-theme="dark"] .author-box,
+[data-theme="dark"] .plan-wrap,
+[data-theme="dark"] .tq figure,
+[data-theme="dark"] .map-ph__card { background: var(--surface); border-color: var(--line); }
+[data-theme="dark"] .quote-card--tint,
+[data-theme="dark"] .tq--1 figure { background: #2b2825; border-color: #2b2825; }
+[data-theme="dark"] .price--feat { background: #2b2825; border-color: var(--accent); }
+[data-theme="dark"] .svc-card:hover, [data-theme="dark"] .svc-card:focus-within { box-shadow: 0 34px 60px -34px rgba(0, 0, 0, .9); }
+[data-theme="dark"] .slide__info { background: var(--bg); }
+[data-theme="dark"] .award:hover { background: var(--surface); }
+[data-theme="dark"] .mat-refs { background: var(--bg-alt); border-color: var(--line); }
+[data-theme="dark"] .form-success { background: var(--bg-alt); border-color: var(--accent); }
+[data-theme="dark"] .swatch span { color: var(--muted); }
+[data-theme="dark"] .gal__ov { background: rgba(0, 0, 0, .55); }
+
+/* Project + journal filters, chips, pager, metadata */
+[data-theme="dark"] .filter-btn:hover,
+[data-theme="dark"] .chip:hover,
+[data-theme="dark"] .pager button:hover:not(:disabled) { background: var(--bg-alt); border-color: var(--text); }
+[data-theme="dark"] .filter-btn.is-active,
+[data-theme="dark"] .chip.is-active,
+[data-theme="dark"] .pager button[aria-current="page"] { background: var(--text); color: var(--bg); }
+[data-theme="dark"] .meta-inline,
+[data-theme="dark"] .meta { color: var(--muted); }
+[data-theme="dark"] .meta span:first-child { color: var(--accent); }
+
+/* Forms */
+[data-theme="dark"] .field input:not([type="checkbox"]),
+[data-theme="dark"] .field select,
+[data-theme="dark"] .field textarea,
+[data-theme="dark"] .j-search input { background: var(--bg); color: var(--text); border-color: var(--line-strong); }
+[data-theme="dark"] .field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23ABA396' stroke-width='1.5'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E"); }
+[data-theme="dark"] .field select option { background: #1e1c19; color: var(--text); }
+[data-theme="dark"] input[type="date"] { color-scheme: dark; }
+[data-theme="dark"] .field--check input { accent-color: var(--accent); }
+
+/* Tables (Bootstrap) */
+[data-theme="dark"] .compare__table { --bs-table-color: var(--text); --bs-table-border-color: var(--line); }
+[data-theme="dark"] .compare__table thead th { border-bottom-color: var(--text); }
+
+/* Accordion */
+[data-theme="dark"] .accordion-forma .accordion-button::after { filter: invert(1) brightness(1.4); }
+
+/* Timeline + gantt */
+[data-theme="dark"] .tl-item__dot { background: var(--bg); border-color: var(--text); }
+[data-theme="dark"] .process__marker { background: var(--bg); border-color: var(--text); }
+[data-theme="dark"] .gantt__bar { background: var(--accent); }
+
+/* Map placeholder + plan drawings inherit currentColor */
+[data-theme="dark"] .map-ph { background: var(--bg-alt); color: #4c473f; }
+
+/* Footer is already dark; deepen slightly against the dark page */
+[data-theme="dark"] .site-footer { background-color: #0c0b0a; }
+
+/* Back to top */
+[data-theme="dark"] .back-to-top { box-shadow: 0 14px 30px -14px rgba(0, 0, 0, .9); }
+
+/* Before / after label chips */
+[data-theme="dark"] .ba__before img { filter: grayscale(.85) contrast(.9) brightness(.75) sepia(.2); }
+
+/* Selection */
+[data-theme="dark"] ::selection { background: var(--accent); color: var(--ink); }

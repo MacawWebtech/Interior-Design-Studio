@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Immersive Interior Experience | Atelier Forma</title>
+  <meta name="description" content="An immersive, scroll-led look at Atelier Forma&#x27;s interiors: cinematic projects, material studies, our design process and the story behind the studio.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#171717">
+  <link rel="canonical" href="https://www.atelierforma.example/home-2.html">
+<link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Atelier Forma">
+  <meta property="og:title" content="Immersive Interior Experience | Atelier Forma">
+  <meta property="og:description" content="An immersive, scroll-led look at Atelier Forma&#x27;s interiors: cinematic projects, material studies, our design process and the story behind the studio.">
+  <meta property="og:url" content="https://www.atelierforma.example/home-2.html">
+  <meta property="og:image" content="https://www.atelierforma.example/assets/images/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Immersive Interior Experience | Atelier Forma">
+  <meta name="twitter:description" content="An immersive, scroll-led look at Atelier Forma&#x27;s interiors: cinematic projects, material studies, our design process and the story behind the studio.">
+  <meta name="twitter:image" content="https://www.atelierforma.example/assets/images/og-cover.jpg">
+
+  <script>
+    /* Apply saved (or system) theme and text direction before first paint. */
+    (function () {
+      var d = document.documentElement;
+      try {
+        var t = localStorage.getItem('af-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        d.setAttribute('data-theme', t); d.setAttribute('data-bs-theme', t);
+        if (localStorage.getItem('af-dir') === 'rtl') d.setAttribute('dir', 'rtl');
+      } catch (e) {}
+      d.classList.add('js');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" as="image" href="assets/images/banner2.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" id="bs-css" data-ltr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" data-rtl="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" crossorigin="anonymous">
+  <script>if (document.documentElement.getAttribute('dir') === 'rtl') document.getElementById('bs-css').href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css';</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.atelierforma.example/#organization",
+      "name": "Atelier Forma",
+      "url": "https://www.atelierforma.example/",
+      "logo": "https://www.atelierforma.example/assets/images/favicon.svg",
+      "description": "Interior architecture and design studio creating residential, commercial and hospitality interiors.",
+      "sameAs": [
+        "https://www.instagram.com/",
+        "https://www.pinterest.com/",
+        "https://www.linkedin.com/",
+        "https://www.youtube.com/",
+        "https://www.behance.net/"
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.atelierforma.example/#studio",
+      "name": "Atelier Forma",
+      "description": "Luxury interior architecture and design studio. Residential, commercial, hospitality and bespoke furniture design across India.",
+      "url": "https://www.atelierforma.example/",
+      "image": "https://www.atelierforma.example/assets/images/og-cover.jpg",
+      "telephone": "+91 44 4000 1200",
+      "email": "studio@atelierforma.example",
+      "priceRange": "₹₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "14 Forma House, Boat Club Road, R.A. Puram",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "600028",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 13.0244,
+        "longitude": 80.254
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:30",
+          "closes": "18:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "10:00",
+          "closes": "15:00"
+        }
+      ],
+      "areaServed": [
+        "Chennai",
+        "Bengaluru",
+        "Mumbai",
+        "Hyderabad",
+        "Coimbatore",
+        "Kochi",
+        "New Delhi",
+        "Pondicherry"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/",
+        "https://www.pinterest.com/",
+        "https://www.linkedin.com/",
+        "https://www.youtube.com/",
+        "https://www.behance.net/"
+      ],
+      "parentOrganization": {
+        "@id": "https://www.atelierforma.example/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.atelierforma.example/home-2.html",
+      "url": "https://www.atelierforma.example/home-2.html",
+      "name": "Immersive Interior Experience | Atelier Forma",
+      "isPartOf": {
+        "@id": "https://www.atelierforma.example/#organization"
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container-wide header-inner">
+      <a class="brand" href="index.html" aria-label="Atelier Forma, Interior Architecture. Home">
+        <img class="brand__mark" src="assets/images/logo.png" alt="Atelier Forma – Interior Architecture" width="160" height="77">
+      </a>
+      <nav class="nav-main d-none d-lg-block" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Home</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="index.html">Modern Studio Landing</a></li><li><a class="dropdown-item" href="home-2.html">Immersive Experience</a></li></ul></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="journal.html">Journal</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false"><i class="bi bi-moon-stars" aria-hidden="true"></i></button>
+        <button class="icon-btn" type="button" data-rtl-toggle aria-label="Switch to right-to-left layout" aria-pressed="false"><i class="bi bi-translate" aria-hidden="true"></i></button>
+        <a class="btn-forma btn-forma--solid btn-forma--sm d-none d-xl-inline-flex" href="contact.html#enquiry"><span>Start a Project</span></a>
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Open menu"><i class="bi bi-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <img class="brand__mark brand__mark--mobile" id="mobileNavLabel" src="assets/images/logo.png" alt="Atelier Forma">
+      <button type="button" class="icon-btn" data-bs-dismiss="offcanvas" aria-label="Close menu"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav aria-label="Mobile">
+        <ul class="mobile-links">
+          <li><a href="index.html">Home</a><ul class="mobile-sub"><li><a href="index.html">Modern Landing</a></li><li><a href="home-2.html">Immersive Experience</a></li></ul></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-foot">
+        <a class="btn-forma btn-forma--solid " href="contact.html#enquiry"><span>Start a Project</span><span class="btn-forma__icon"><i class="bi bi-arrow-right" aria-hidden="true"></i></span></a>
+        <p class="mt-4 mb-1">14 Forma House, Boat Club Road, R.A. Puram, Chennai 600028, Tamil Nadu, India</p>
+        <p class="mb-0"><a href="mailto:studio@atelierforma.example">studio@atelierforma.example</a><br><a href="tel:+914440001200">+91 44 4000 1200</a></p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- 1. CINEMATIC PINNED HERO -->
+    <section class="hx on-dark" data-hx aria-labelledby="hx-title">
+      <div class="hx__pin">
+        <div class="hx__grid" aria-hidden="true"></div>
+        <div class="hx__frame">
+          <div class="hx__bg"><div class="hx__bgpx" data-depth="0.06"><img src="assets/images/banner2.jpg" srcset="" sizes="100vw" width="2400" height="1500" alt="Double-height living space with tall windows and a calm natural palette" fetchpriority="high" decoding="async"></div></div>
+          <div class="hero__light" data-depth="0.08" aria-hidden="true"></div>
+          <div class="hero__shade" aria-hidden="true"></div>
+          <div class="hero__fg hero__fg--plant" data-depth="-0.06" aria-hidden="true"><svg viewBox="0 0 320 520" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M120 500h80l-10-90h-60z"/><path d="M160 410C150 300 150 210 160 90c10 120 10 210 0 320z" opacity=".95"/><path d="M160 380C90 360 40 300 30 210c60 20 110 70 130 170z"/><path d="M160 340c70-30 110-90 120-170-62 22-104 74-120 170z"/><path d="M160 260C110 240 80 190 80 120c50 16 76 62 80 140z"/><path d="M160 230c50-20 76-64 82-118-44 12-74 52-82 118z"/><path d="M160 170C138 140 134 100 148 50c22 32 24 74 12 120z"/></g></svg></div>
+          <div class="hero__fg hero__fg--pendant" data-depth="-0.04" aria-hidden="true"><svg viewBox="0 0 200 420" aria-hidden="true" focusable="false"><g fill="currentColor"><rect x="99" y="0" width="2" height="250"/><path d="M30 340a70 70 0 0 1 140 0z"/><rect x="92" y="240" width="16" height="26"/></g><ellipse cx="100" cy="352" rx="60" ry="10" fill="#ffd9a0" opacity=".55"/></svg></div>
+        </div>
+        <div class="hx__type">
+          <h1 class="hx__title" id="hx-title"><span class="hx__l" data-hx-l>Spaces That</span><span class="hx__r" data-hx-r><em>Speak Without Words.</em></span></h1>
+        </div>
+        <div class="hx__foot container-wide">
+          <div class="hero__actions"><a class="btn-forma btn-forma--solid " href="projects.html"><span>Explore Projects</span><span class="btn-forma__icon"><i class="bi bi-arrow-right" aria-hidden="true"></i></span></a><a class="btn-forma btn-forma--ghost " href="contact.html#enquiry"><span>Start a Project</span><span class="btn-forma__icon"><i class="bi bi-arrow-right" aria-hidden="true"></i></span></a></div>
+        </div>
+        <a class="scroll-indicator" href="#statement" data-scroll-indicator aria-label="Scroll to the design philosophy"><span>Scroll</span><i class="scroll-indicator__line"></i></a>
+      </div>
+    </section>
+
+    <!-- 2. STATEMENT -->
+    <section class="section statement" id="statement" aria-labelledby="st-title">
+      <svg class="float-el d-none d-lg-block" data-speed="0.2" style="top:12%;inset-inline-end:6%;width:70px" viewBox="0 0 120 200" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true" focusable="false"><path d="M60 196C60 130 60 90 60 20"/><path d="M60 150C30 140 14 118 12 92c28 4 44 26 48 58zM60 120c28-8 44-28 48-54-28 2-46 22-48 54zM60 84C36 76 24 58 24 34c22 2 34 20 36 50zM60 60c20-6 30-22 32-42-20 2-30 16-32 42z"/></svg>
+      <div class="container-wide">
+        <p class="eyebrow ">Design philosophy</p>
+        <h2 class="t-sm-head" id="st-title">We Design For How Life Feels.</h2>
+        <p class="statement__text" data-scrub-words>We believe exceptional interiors are not defined by trends alone. They are shaped by proportion, light, material, texture, movement and the people who inhabit them.</p>
+      </div>
+    </section>
+
+    <!-- window expansion -->
+    <section class="expander" aria-hidden="true">
+      <div class="expander__frame" data-expand><img src="assets/images/service5.jpg" srcset="" sizes="100vw" width="2400" height="1400" alt="" loading="lazy" decoding="async"></div>
+    </section>
+
+    <!-- 3. FEATURED PROJECT SLIDER -->
+    <section class="section slider-sec" aria-labelledby="sl-title">
+      <div class="container-wide">
+        <div class="section-head">
+          <div><p class="eyebrow ">Featured projects</p><h2 class="t-xl" id="sl-title" data-reveal="text">Rooms we<br>keep returning to.</h2></div>
+          <p class="section-head__aside" data-count-note><span data-h-current>01</span> / <span data-h-total>04</span></p>
+        </div>
+      </div>
+      <div class="h-slider" data-h-slider>
+        <ul class="h-slider__track slide-track" tabindex="0" role="region" aria-label="Featured projects, scroll horizontally"><li class="slide">
+          <a class="slide__media" href="project-details.html" tabindex="-1" aria-hidden="true"><img src="assets/images/design1.jpg" srcset="" sizes="(min-width:992px) 70vw, 88vw" width="1600" height="1000" alt="" loading="lazy" decoding="async"></a>
+          <div class="slide__info"><span class="slide__n" aria-hidden="true">01</span><h3>The Courtyard Residence</h3><ul class="meta-inline"><li>Chennai, India</li><li>Residential</li><li>2026</li></ul><p>A contemporary home designed around light, greenery and a calm material palette.</p><a class="link-arrow " href="project-details.html"><span>View project</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+        </li><li class="slide">
+          <a class="slide__media" href="project-details.html" tabindex="-1" aria-hidden="true"><img src="assets/images/design2.jpg" srcset=" " sizes="(min-width:992px) 70vw, 88vw" width="1600" height="1000" alt="" loading="lazy" decoding="async"></a>
+          <div class="slide__info"><span class="slide__n" aria-hidden="true">02</span><h3>Casa Verde</h3><ul class="meta-inline"><li>Bengaluru, India</li><li>Luxury Villa</li><li>2026</li></ul><p>A garden villa where deep verandahs, jaali screens and layered planting soften every threshold.</p><a class="link-arrow " href="project-details.html"><span>View project</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+        </li><li class="slide">
+          <a class="slide__media" href="project-details.html" tabindex="-1" aria-hidden="true"><img src="assets/images/design3.jpg" srcset="" sizes="(min-width:992px) 70vw, 88vw" width="1600" height="1000" alt="" loading="lazy" decoding="async"></a>
+          <div class="slide__info"><span class="slide__n" aria-hidden="true">03</span><h3>The Ivory Penthouse</h3><ul class="meta-inline"><li>Mumbai, India</li><li>Luxury Home</li><li>2023</li></ul><p>A sky-high penthouse in pale stone, plaster and bleached oak, composed like a gallery.</p><a class="link-arrow " href="project-details.html"><span>View project</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+        </li><li class="slide">
+          <a class="slide__media" href="project-details.html" tabindex="-1" aria-hidden="true"><img src="assets/images/design4.jpg" srcset="" sizes="(min-width:992px) 70vw, 88vw" width="1600" height="1000" alt="" loading="lazy" decoding="async"></a>
+          <div class="slide__info"><span class="slide__n" aria-hidden="true">04</span><h3>Terracotta House</h3><ul class="meta-inline"><li>Coimbatore, India</li><li>Residential</li><li>2025</li></ul><p>Handmade clay tiles, lime plaster and arched openings shape a home that feels rooted in place.</p><a class="link-arrow " href="project-details.html"><span>View project</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+        </li></ul>
+        <div class="container-wide h-slider__ui">
+          <div class="h-slider__progress" aria-hidden="true"><span data-h-progress></span></div>
+          <div class="h-slider__btns">
+            <button type="button" class="icon-btn icon-btn--ring" data-h-prev aria-label="Previous project"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+            <button type="button" class="icon-btn icon-btn--ring" data-h-next aria-label="Next project"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MATERIAL & TEXTURE -->
+    <section class="section tex-sec on-dark" aria-labelledby="tx-title">
+      <div class="container-wide">
+        <div class="row align-items-end gy-4 mb-5">
+          <div class="col-lg-7"><p class="eyebrow ">Material &amp; texture</p><h2 class="t-xxl" id="tx-title" data-reveal="text">Material Has<br>a Memory.</h2></div>
+          <div class="col-lg-4 offset-lg-1"><p data-reveal="fade-up">From tactile stone to warm timber, every material is selected to create atmosphere, depth and longevity. Hover, tap or focus a sample to explore it.</p></div>
+        </div>
+        <ul class="tex-strip" data-tex-strip><li class="tex" tabindex="0" data-tex aria-label="Natural Stone: Honed limestone and sandstone with a quiet, mineral softness.">
+          <img src="assets/images/materials/stone.webp" width="720" height="960" alt="Natural Stone sample" loading="lazy" decoding="async">
+          <span class="tex__name">Natural Stone</span><span class="tex__note">Honed limestone and sandstone with a quiet, mineral softness.</span></li><li class="tex" tabindex="0" data-tex aria-label="Marble: Ivory slabs with restrained veining, book-matched where it counts.">
+          <img src="assets/images/materials/marble.webp" width="720" height="960" alt="Marble sample" loading="lazy" decoding="async">
+          <span class="tex__name">Marble</span><span class="tex__note">Ivory slabs with restrained veining, book-matched where it counts.</span></li><li class="tex" tabindex="0" data-tex aria-label="Timber: Solid oak, walnut and teak, oiled to keep the grain visible.">
+          <img src="assets/images/materials/timber.webp" width="720" height="960" alt="Timber sample" loading="lazy" decoding="async">
+          <span class="tex__name">Timber</span><span class="tex__note">Solid oak, walnut and teak, oiled to keep the grain visible.</span></li><li class="tex" tabindex="0" data-tex aria-label="Brass: Hand-brushed fittings that warm and deepen with touch.">
+          <img src="assets/images/materials/brass.webp" width="720" height="960" alt="Brass sample" loading="lazy" decoding="async">
+          <span class="tex__name">Brass</span><span class="tex__note">Hand-brushed fittings that warm and deepen with touch.</span></li><li class="tex" tabindex="0" data-tex aria-label="Concrete: Micro-cement and cast surfaces for calm, sculptural volumes.">
+          <img src="assets/images/materials/concrete.webp" width="720" height="960" alt="Concrete sample" loading="lazy" decoding="async">
+          <span class="tex__name">Concrete</span><span class="tex__note">Micro-cement and cast surfaces for calm, sculptural volumes.</span></li><li class="tex" tabindex="0" data-tex aria-label="Glass: Fluted, tinted and clear glass to filter and borrow light.">
+          <img src="assets/images/materials/glass.webp" width="720" height="960" alt="Glass sample" loading="lazy" decoding="async">
+          <span class="tex__name">Glass</span><span class="tex__note">Fluted, tinted and clear glass to filter and borrow light.</span></li><li class="tex" tabindex="0" data-tex aria-label="Linen: Loosely woven natural upholstery and drapery with real weight.">
+          <img src="assets/images/materials/linen.webp" width="720" height="960" alt="Linen sample" loading="lazy" decoding="async">
+          <span class="tex__name">Linen</span><span class="tex__note">Loosely woven natural upholstery and drapery with real weight.</span></li><li class="tex" tabindex="0" data-tex aria-label="Terrazzo: Poured-in-place terrazzo with chips cut from local stone.">
+          <img src="assets/images/materials/terrazzo.webp" width="720" height="960" alt="Terrazzo sample" loading="lazy" decoding="async">
+          <span class="tex__name">Terrazzo</span><span class="tex__note">Poured-in-place terrazzo with chips cut from local stone.</span></li><li class="tex" tabindex="0" data-tex aria-label="Handmade Tiles: Glazed clay tiles with the variation only hands can make.">
+          <img src="assets/images/materials/tiles.webp" width="720" height="960" alt="Handmade Tiles sample" loading="lazy" decoding="async">
+          <span class="tex__name">Handmade Tiles</span><span class="tex__note">Glazed clay tiles with the variation only hands can make.</span></li></ul>
+      </div>
+    </section>
+
+    <!-- 5. PROCESS -->
+    <section class="section process-x" aria-labelledby="pr-title">
+      <svg class="float-el d-none d-lg-block" data-speed="-0.1" style="bottom:6%;inset-inline-start:2%;width:220px" viewBox="0 0 220 160" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true" focusable="false"><path d="M6 6h208v148H6z"/><path d="M6 70h96M102 6v64M102 100v54M150 70h64M150 70v84"/><path d="M102 70a24 24 0 0 1-24-24" /><path d="M150 100a20 20 0 0 1 20 20" /><path d="M20 118h60M20 130h40" stroke-dasharray="3 4"/></svg>
+      <div class="container-wide">
+        <div class="row gx-lg-5">
+          <div class="col-lg-4"><div class="process-x__sticky"><p class="eyebrow ">Design process</p><h2 class="t-lg" id="pr-title" data-reveal="text">How a space takes shape.</h2><p data-reveal="fade-up">Five stages, each with a clear outcome, so you always know where the project stands and what happens next.</p></div></div>
+          <div class="col-lg-7 offset-lg-1"><ol class="px-steps"><li class="px-step" data-reveal="fade-up">
+          <span class="px-step__n" aria-hidden="true">01</span>
+          <div><h3>Discover</h3><p>Understanding your lifestyle, needs and vision.</p></div><i class="px-step__line" aria-hidden="true"></i></li><li class="px-step" data-reveal="fade-up">
+          <span class="px-step__n" aria-hidden="true">02</span>
+          <div><h3>Define</h3><p>Developing the concept, spatial strategy and material direction.</p></div><i class="px-step__line" aria-hidden="true"></i></li><li class="px-step" data-reveal="fade-up">
+          <span class="px-step__n" aria-hidden="true">03</span>
+          <div><h3>Design</h3><p>Creating detailed layouts, elevations, furniture and lighting concepts.</p></div><i class="px-step__line" aria-hidden="true"></i></li><li class="px-step" data-reveal="fade-up">
+          <span class="px-step__n" aria-hidden="true">04</span>
+          <div><h3>Develop</h3><p>Refining materials, finishes and construction details.</p></div><i class="px-step__line" aria-hidden="true"></i></li><li class="px-step" data-reveal="fade-up">
+          <span class="px-step__n" aria-hidden="true">05</span>
+          <div><h3>Deliver</h3><p>Managing execution and bringing the design to life.</p></div><i class="px-step__line" aria-hidden="true"></i></li></ol></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. RESIDENTIAL -->
+    <section class="section residential on-paper" aria-labelledby="rs-title">
+      <div class="container-wide">
+        <div class="section-head"><div><p class="eyebrow ">Selected residential projects</p><h2 class="t-xl" id="rs-title" data-reveal="text">Homes, composed.</h2></div>
+          <div class="section-head__aside"><a class="link-arrow " href="projects.html?cat=residential"><span>All residential work</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></div></div>
+        <article class="rr rr--a">
+          <div class="rr__main"><div class="frame reveal-media " style="--ar:4/3" data-reveal="curtain"><div class="px" data-parallax-img data-speed="0.06"><img src="assets/images/country.jpg" srcset="" sizes="(min-width:992px) 62vw, 100vw" width="1600" height="1200" alt="The Courtyard Residence, a contemporary home built around a central garden court" loading="lazy" decoding="async"></div></div></div>
+          <div class="rr__second"><div class="frame reveal-media " style="--ar:3/4" data-reveal="wipe-x"><div class="px" data-parallax-img data-speed="0.16"><img src="assets/images/blog details2.jpg" srcset="" sizes="(min-width:992px) 24vw, 50vw" width="900" height="1200" alt="Living room of The Courtyard Residence with a calm palette and garden views" loading="lazy" decoding="async"></div></div></div>
+          <div class="rr__text">
+            <span class="rr__n" aria-hidden="true">01</span>
+            <h3>The Courtyard Residence</h3><ul class="meta-inline"><li>Chennai, India</li><li>Residential</li><li>2026</li></ul><p>A contemporary home designed around light, greenery and a calm material palette.</p>
+            <a class="link-arrow " href="project-details.html"><span>View project</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+        <article class="rr rr--b">
+          <div class="rr__main"><div class="frame reveal-media " style="--ar:4/3" data-reveal="curtain"><div class="px" data-parallax-img data-speed="0.06"><img src="assets/images/Casa Verde.jpg" srcset="" sizes="(min-width:992px) 62vw, 100vw" width="1600" height="1200" alt="Casa Verde villa with deep verandahs and layered greenery" loading="lazy" decoding="async"></div></div></div>
+          <div class="rr__second"><div class="frame reveal-media " style="--ar:3/4" data-reveal="wipe-x"><div class="px" data-parallax-img data-speed="0.16"><img src="assets/images/design7.jpg" srcset="" sizes="(min-width:992px) 24vw, 50vw" width="900" height="1200" alt="Bright sitting room with layered neutrals and a woven rug" loading="lazy" decoding="async"></div></div></div>
+          <div class="rr__text">
+            <span class="rr__n" aria-hidden="true">02</span>
+            <h3>Casa Verde</h3><ul class="meta-inline"><li>Bengaluru, India</li><li>Luxury Villa</li><li>2026</li></ul><p>A garden villa where deep verandahs, jaali screens and layered planting soften every threshold.</p>
+            <a class="link-arrow " href="project-details.html"><span>View project</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+        <article class="rr rr--a">
+          <div class="rr__main"><div class="frame reveal-media " style="--ar:4/3" data-reveal="curtain"><div class="px" data-parallax-img data-speed="0.06"><img src="assets/images/Terracotta House.jpg" srcset="" sizes="(min-width:992px) 62vw, 100vw" width="1600" height="1200" alt="Terracotta House living area with handmade clay tiles and arched openings" loading="lazy" decoding="async"></div></div></div>
+          <div class="rr__second"><div class="frame reveal-media " style="--ar:3/4" data-reveal="wipe-x"><div class="px" data-parallax-img data-speed="0.16"><img src="assets/images/design8.jpg" srcset="" sizes="(min-width:992px) 24vw, 50vw" width="900" height="1200" alt="Bedroom and reading corner with warm textiles" loading="lazy" decoding="async"></div></div></div>
+          <div class="rr__text">
+            <span class="rr__n" aria-hidden="true">03</span>
+            <h3>Terracotta House</h3><ul class="meta-inline"><li>Coimbatore, India</li><li>Residential</li><li>2025</li></ul><p>Handmade clay tiles, lime plaster and arched openings shape a home that feels rooted in place.</p>
+            <a class="link-arrow " href="project-details.html"><span>View project</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7. COMMERCIAL & HOSPITALITY -->
+    <section class="section comm on-dark" aria-labelledby="cm-title">
+      <div class="comm__type" aria-hidden="true" data-hmove="-0.3"><span>Commercial</span><span>Hospitality</span><span>Retail</span></div>
+      <div class="container-wide">
+        <div class="section-head"><div><p class="eyebrow ">Commercial &amp; hospitality</p><h2 class="t-xl" id="cm-title" data-reveal="text">Spaces that<br>hold a crowd.</h2></div>
+          <div class="section-head__aside"><a class="link-arrow " href="projects.html?cat=commercial"><span>All commercial work</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a></div></div>
+        <div class="comm__cols">
+          <div class="comm__col" data-speed="0.05"><article class="ch ">
+          <a class="ch__media" href="project-details.html" tabindex="-1" aria-hidden="true"><div class="frame reveal-media " style="--ar:4/5" data-reveal="clip-up"><div class="px" data-parallax-img data-speed="0.05"><img src="assets/images/journal1.jpg" sizes="(min-width:992px) 36vw, 100vw" width="1200" height="1500" alt="" loading="lazy" decoding="async"></div></div></a>
+          <h3><a href="project-details.html">The Monochrome Office</a></h3><ul class="meta-inline"><li>Mumbai, India</li><li>Commercial</li><li>2025</li></ul>
+        </article><article class="ch ">
+          <a class="ch__media" href="project-details.html" tabindex="-1" aria-hidden="true"><div class="frame reveal-media " style="--ar:4/3" data-reveal="clip-up"><div class="px" data-parallax-img data-speed="0.05"><img src="assets/images/journal2.jpg" srcset="" sizes="(min-width:992px) 36vw, 100vw" width="1200" height="1500" alt="" loading="lazy" decoding="async"></div></div></a>
+          <h3><a href="project-details.html">Villa Halden</a></h3><ul class="meta-inline"><li>Pondicherry, India</li><li>Boutique Hotel</li><li>2023</li></ul>
+        </article></div>
+          <div class="comm__col comm__col--b" data-speed="-0.05"><article class="ch ">
+          <a class="ch__media" href="project-details.html" tabindex="-1" aria-hidden="true"><div class="frame reveal-media " style="--ar:4/3" data-reveal="clip-up"><div class="px" data-parallax-img data-speed="0.05"><img src="assets/images/journal3.jpg" srcset="" sizes="(min-width:992px) 36vw, 100vw" width="1200" height="1500" alt="" loading="lazy" decoding="async"></div></div></a>
+          <h3><a href="project-details.html">The Oak Lounge</a></h3><ul class="meta-inline"><li>Hyderabad, India</li><li>Hospitality</li><li>2025</li></ul>
+        </article><article class="ch ">
+          <a class="ch__media" href="project-details.html" tabindex="-1" aria-hidden="true"><div class="frame reveal-media " style="--ar:4/5" data-reveal="clip-up"><div class="px" data-parallax-img data-speed="0.05"><img src="assets/images/journal4.jpg" src="assets/images/journal4.jpg" sizes="(min-width:992px) 36vw, 100vw" width="1200" height="1500" alt="" loading="lazy" decoding="async"></div></div></a>
+          <h3><a href="project-details.html">Ember &amp; Ash</a></h3><ul class="meta-inline"><li>New Delhi, India</li><li>Restaurant</li><li>2025</li></ul>
+        </article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FOUNDER -->
+    <section class="section founder" aria-labelledby="fd-title">
+      <div class="container-wide">
+        <div class="row gx-lg-5 gy-5 align-items-center">
+          <div class="col-lg-5"><div class="founder__portrait"><div class="frame reveal-media " style="--ar:3/4" data-reveal="expand"><div class="px" data-parallax-img data-speed="0.06"><img src="assets/images/team5.jpg" sizes="(min-width:992px) 40vw, 100vw" width="1000" height="1300" alt="Ananya Ramesh, founder and creative director of Atelier Forma" loading="lazy" decoding="async"></div></div>
+            <p class="founder__vertical" aria-hidden="true">Founder&rsquo;s note</p></div></div>
+          <div class="col-lg-6 offset-lg-1">
+            <p class="eyebrow ">Founder / creative director</p>
+            <h2 class="t-md" id="fd-title" data-reveal="text">A room is finished when nothing more needs to be said.</h2>
+            <p class="lead-serif" data-reveal="fade-up">&ldquo;I trained as an architect, but I learned to design by watching how families actually use their homes: where the bags land, where the light is lovely at six, where everyone ends up at midnight.&rdquo;</p>
+            <p data-reveal="fade-up">Ananya founded Atelier Forma in 2014 to bring architectural discipline to interiors. She still leads every concept presentation, and still visits each site at least once a month during construction.</p>
+            <p class="signature" data-reveal="fade-up">Ananya Ramesh<small>Founder &amp; Creative Director</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. AWARDS -->
+    <section class="section awards on-paper" aria-labelledby="aw-title">
+      <div class="container-wide">
+        <div class="row gx-lg-5">
+          <div class="col-lg-4"><p class="eyebrow ">Awards / recognition</p><h2 class="t-lg" id="aw-title" data-reveal="text">48 awards and counting.</h2><p class="small-note">Award names are demo content. Replace with your own recognition.</p></div>
+          <div class="col-lg-7 offset-lg-1"><ul class="award-list"><li class="award" data-reveal="fade-up"><span class="award__y">2026</span><span class="award__t">Residential Interior of the Year</span><span class="award__p">The Courtyard Residence</span></li><li class="award" data-reveal="fade-up"><span class="award__y">2025</span><span class="award__t">Excellence in Hospitality Design</span><span class="award__p">The Oak Lounge</span></li><li class="award" data-reveal="fade-up"><span class="award__y">2025</span><span class="award__t">Best Use of Natural Materials</span><span class="award__p">Terracotta House</span></li><li class="award" data-reveal="fade-up"><span class="award__y">2024</span><span class="award__t">Commercial Interior Merit</span><span class="award__p">The Monochrome Office</span></li><li class="award" data-reveal="fade-up"><span class="award__y">2024</span><span class="award__t">Retail Design Commendation</span><span class="award__p">Sandstone Showroom</span></li><li class="award" data-reveal="fade-up"><span class="award__y">2023</span><span class="award__t">Sustainable Interior Commendation</span><span class="award__p">Villa Halden</span></li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CTA -->
+    
+    <section class="enquiry parallax-band on-dark" data-parallax-bg aria-labelledby="enquiry-title">
+      <div class="parallax-band__media" aria-hidden="true"><img src="assets/images/ctc.jpg" srcset="" sizes="100vw" width="2000" height="1200" alt="" loading="lazy" decoding="async"></div>
+      <div class="parallax-band__veil"></div>
+      <svg class="float-el d-none d-lg-block float-el--tr" data-speed="0.2"  viewBox="0 0 220 160" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true" focusable="false"><path d="M6 6h208v148H6z"/><path d="M6 70h96M102 6v64M102 100v54M150 70h64M150 70v84"/><path d="M102 70a24 24 0 0 1-24-24" /><path d="M150 100a20 20 0 0 1 20 20" /><path d="M20 118h60M20 130h40" stroke-dasharray="3 4"/></svg>
+      <div class="container-wide enquiry__inner">
+        <p class="eyebrow ">Project enquiry</p>
+        <h2 class="t-xl" id="enquiry-title" data-reveal="text">Let's Create a Space With Character.</h2>
+        <p class="enquiry__lead" data-reveal="fade-up" style="--d:.15s">Tell us about your project, your vision, and the kind of space you want to create.</p>
+        <div class="enquiry__actions" data-reveal="fade-up" style="--d:.25s">
+          <a class="btn-forma btn-forma--solid " href="contact.html#enquiry"><span>Book a Consultation</span><span class="btn-forma__icon"><i class="bi bi-arrow-right" aria-hidden="true"></i></span></a>
+          <a class="btn-forma btn-forma--ghost " href="projects.html"><span>View Our Projects</span><span class="btn-forma__icon"><i class="bi bi-arrow-right" aria-hidden="true"></i></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top">
+        <p class="footer-statement" data-reveal="fade-up">Designing spaces with purpose, character and permanence.</p>
+        <form class="newsletter" data-newsletter novalidate>
+          <label for="newsletter-email" class="eyebrow mb-3 d-block">Journal newsletter</label>
+          <div class="newsletter__row">
+            <input type="email" id="newsletter-email" name="email" placeholder="Your email address" autocomplete="email" required aria-describedby="newsletter-msg">
+            <button type="submit" class="newsletter__btn" aria-label="Subscribe to the newsletter"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          </div>
+          <p class="newsletter__msg" id="newsletter-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="row gy-5 footer-cols">
+        <div class="col-lg-4">
+          <a class="brand brand--footer" href="index.html" aria-label="Atelier Forma home"><img class="brand__mark" src="assets/images/logo.png" alt="Atelier Forma – Interior Architecture" width="160" height="77"></a>
+          <p class="footer-about">An interior architecture and design studio creating homes, workplaces and hospitality spaces shaped by light, material and the way people actually live.</p>
+          <ul class="social social--footer"><li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li><li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="bi bi-pinterest" aria-hidden="true"></i></a></li><li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li><li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a></li><li><a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="bi bi-behance" aria-hidden="true"></i></a></li></ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2"><h2 class="footer-h">Explore</h2><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="home-2.html">Immersive Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="journal.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="col-6 col-md-3 col-lg-2"><h2 class="footer-h">Services</h2><ul class="footer-links"><li><a href="service-details.html">Residential Interior Design</a></li><li><a href="service-details.html">Luxury Home Interiors</a></li><li><a href="service-details.html">Apartment &amp; Villa Design</a></li><li><a href="service-details.html">Commercial Interior Design</a></li><li><a href="service-details.html">Office Interiors</a></li><li><a href="service-details.html">Hospitality Interiors</a></li></ul></div>
+        <div class="col-6 col-md-3 col-lg-2"><h2 class="footer-h">Selected Projects</h2><ul class="footer-links"><li><a href="project-details.html">The Courtyard Residence</a></li><li><a href="project-details.html">Casa Verde</a></li><li><a href="project-details.html">The Monochrome Office</a></li><li><a href="project-details.html">Terracotta House</a></li><li><a href="project-details.html">The Oak Lounge</a></li><li><a href="project-details.html">The Linen Apartment</a></li></ul></div>
+        <div class="col-6 col-md-3 col-lg-2"><h2 class="footer-h">Journal</h2><ul class="footer-links"><li><a href="journal-details.html">7 Materials Defining Modern Luxury Interiors</a></li><li><a href="journal-details.html">The Art of Creating Warm Minimalist Spaces</a></li><li><a href="journal-details.html">Why Texture Matters More Than Color</a></li><li><a href="journal-details.html">Inside Our Latest Chennai Residence</a></li></ul></div>
+      </div>
+
+      <div class="footer-contact">
+        <div><h2 class="footer-h">Studio</h2><address>14 Forma House, Boat Club Road,<br>R.A. Puram, Chennai 600028</address></div>
+        <div><h2 class="footer-h">Opening hours</h2><p>Mon to Fri, 9:30 am to 6:30 pm<br>Saturday, 10:00 am to 3:00 pm</p></div>
+        <div><h2 class="footer-h">Contact</h2><p><a href="mailto:studio@atelierforma.example">studio@atelierforma.example</a><br><a href="tel:+914440001200">+91 44 4000 1200</a></p></div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; <span data-year>2026</span> Atelier Forma. All rights reserved. Template demo content.</p>
+        <ul class="footer-legal">
+          <li><a href="404.html">404 page</a></li>
+          <li><a href="coming-soon.html">Coming soon</a></li>
+          <li><a href="#top" data-back-to-top>Back to top <i class="bi bi-arrow-up" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/parallax.js" defer></script>
+</body>
+</html>
